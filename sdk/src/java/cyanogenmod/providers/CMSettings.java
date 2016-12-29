@@ -1451,7 +1451,15 @@ public final class CMSettings {
         /** @hide */
         public static final Validator DOUBLE_TAP_SLEEP_GESTURE_VALIDATOR =
                 sBooleanValidator;
-
+         
+        /**
+         * Enable double tap gesture anywhere on the lock screen put device to sleep
+         * @hide
+         */
+        public static final String DOUBLE_TAP_SLEEP_ANYWHERE = "double_tap_sleep_anywhere";
+        /** @hide */
+        public static final Validator DOUBLE_TAP_SLEEP_ANYWHERE_VALIDATOR =
+                sBooleanValidator;
         /**
          * Boolean value on whether to show weather in the statusbar
          * 0 = 0ff, 1 = on
@@ -1943,6 +1951,7 @@ public final class CMSettings {
                 CMSettings.System.DISPLAY_COLOR_ADJUSTMENT,
                 CMSettings.System.LIVE_DISPLAY_HINTED,
                 CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE,
+                CMSettings.System.DOUBLE_TAP_SLEEP_ANYWHERE,
                 CMSettings.System.STATUS_BAR_SHOW_WEATHER,
                 CMSettings.System.RECENTS_SHOW_SEARCH_BAR,
                 CMSettings.System.NAVBAR_LEFT_IN_LANDSCAPE,
@@ -2092,6 +2101,7 @@ public final class CMSettings {
             VALIDATORS.put(DISPLAY_COLOR_ADJUSTMENT, DISPLAY_COLOR_ADJUSTMENT_VALIDATOR);
             VALIDATORS.put(LIVE_DISPLAY_HINTED, LIVE_DISPLAY_HINTED_VALIDATOR);
             VALIDATORS.put(DOUBLE_TAP_SLEEP_GESTURE, DOUBLE_TAP_SLEEP_GESTURE_VALIDATOR);
+            VALIDATORS.put(DOUBLE_TAP_SLEEP_ANYWHERE, DOUBLE_TAP_SLEEP_ANYWHERE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_WEATHER, STATUS_BAR_SHOW_WEATHER_VALIDATOR);
             VALIDATORS.put(RECENTS_SHOW_SEARCH_BAR, RECENTS_SHOW_SEARCH_BAR_VALIDATOR);
             VALIDATORS.put(NAVBAR_LEFT_IN_LANDSCAPE, NAVBAR_LEFT_IN_LANDSCAPE_VALIDATOR);
